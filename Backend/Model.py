@@ -15,8 +15,8 @@ def process_json_data(json_data):
         response = client.models.generate_content(
             model="gemini-2.0-flash",
             contents=(
-                "Provide suggestions regarding optimisation, which columns must be used, "
-                "which columns can be ignored, GUI improvement, and how to speed up only based on json provided: \n" + json_data_str
+                "Provide suggestions regarding which columns must be used, "
+                "which columns can be ignored, GUI improvement, and how to speed up only based on json provided: \n" + json_data_str+"Make sure the sugggestions are not general but specific to the json provided.Keep it readable and to the point and the language should be very easy for user and not very technical for the user " 
             )
         )
 
